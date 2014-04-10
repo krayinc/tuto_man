@@ -1,6 +1,6 @@
 # TutoMan
 
-TODO: Write a gem description
+TutoMan manages diplays of tutorial views or reminders in a rails application.
 
 ## Installation
 
@@ -18,7 +18,27 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Configuration
+
+Set display timing for each tutorial or reminders.
+
+```ruby
+# config/initializers/tuto_man.rb
+TutoMan :my_tuto, interval: 7 * 24 * 60 * 60  # once shown suppress for 1 week
+```
+
+### Control
+
+```ruby
+# tell if a tuto is displaying
+tuto(:my_tuto).on?
+
+# mark as shown
+tuto(:my_tuto).shown
+
+# turn off forever
+tuto(:my_tuto).off
+```
 
 ## Contributing
 

@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = TutoMan::VERSION
   spec.authors       = ["Hiroki Yoshioka"]
   spec.email         = ["irohiroki@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{A tutorial view or reminder manager for rails applications.}
+  spec.description   = %q{TutoMan manages diplays of tutorial views or reminders in a rails application.}
+  spec.homepage      = "https://github.com/krayinc/tuto_man"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
